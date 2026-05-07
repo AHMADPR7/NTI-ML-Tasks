@@ -1,0 +1,6 @@
+Requirements :
+1-data reading 
+2-visualization &EDA
+3-preprocessing 
+4-fitting 
+5-testing &evaluation

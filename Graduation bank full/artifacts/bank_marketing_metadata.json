@@ -1,0 +1,172 @@
+{
+  "model_name": "GradientBoostingClassifier",
+  "created_at": "2026-05-03T18:09:17.263909+00:00",
+  "positive_label": "yes",
+  "negative_label": "no",
+  "decision_threshold": 0.26,
+  "feature_order": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "field_labels": {
+    "age": "Age",
+    "job": "Job",
+    "marital": "Marital Status",
+    "education": "Education",
+    "default": "Has Credit in Default",
+    "balance": "Average Yearly Balance",
+    "housing": "Has Housing Loan",
+    "loan": "Has Personal Loan",
+    "contact": "Contact Communication Type",
+    "day": "Last Contact Day of Month",
+    "month": "Last Contact Month",
+    "campaign": "Contacts During Campaign",
+    "pdays": "Days Since Previous Contact",
+    "previous": "Contacts Before This Campaign",
+    "poutcome": "Previous Campaign Outcome"
+  },
+  "categorical_options": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single"
+    ],
+    "education": [
+      "primary",
+      "secondary",
+      "tertiary",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "yes"
+    ],
+    "housing": [
+      "no",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "yes"
+    ],
+    "contact": [
+      "cellular",
+      "telephone",
+      "unknown"
+    ],
+    "month": [
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct",
+      "nov",
+      "dec"
+    ],
+    "poutcome": [
+      "failure",
+      "other",
+      "success",
+      "unknown"
+    ]
+  },
+  "numeric_fields": {
+    "age": {
+      "min": 18,
+      "max": 95,
+      "default": 39
+    },
+    "balance": {
+      "min": -8019,
+      "max": 102127,
+      "default": 448
+    },
+    "day": {
+      "min": 1,
+      "max": 31,
+      "default": 16
+    },
+    "campaign": {
+      "min": 1,
+      "max": 63,
+      "default": 2
+    },
+    "pdays": {
+      "min": -1,
+      "max": 871,
+      "default": -1
+    },
+    "previous": {
+      "min": 0,
+      "max": 275,
+      "default": 0
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8789118655313503,
+    "precision": 0.4834080717488789,
+    "recall": 0.5094517958412098,
+    "f1": 0.49608835710998617,
+    "train_rows": 28934,
+    "test_rows": 9043,
+    "positive_sample_weight": 1.5,
+    "validation_precision": 0.4799154334038055,
+    "validation_recall": 0.5366430260047281,
+    "validation_f1": 0.5066964285714286,
+    "confusion_matrix": {
+      "true_negative": 7409,
+      "false_positive": 576,
+      "false_negative": 519,
+      "true_positive": 539
+    }
+  },
+  "example_input": {
+    "age": 59,
+    "job": "admin.",
+    "marital": "married",
+    "education": "secondary",
+    "default": "no",
+    "balance": 2343,
+    "housing": "yes",
+    "loan": "no",
+    "contact": "unknown",
+    "day": 5,
+    "month": "may",
+    "campaign": 1,
+    "pdays": -1,
+    "previous": 0,
+    "poutcome": "unknown"
+  }
+}
